@@ -340,6 +340,28 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
 .next-step .workshop-outcome p{margin:4px 0 0!important;font-size:15px!important;line-height:1.6!important;color:#f1f1ec}
 #workshop-prelaunch{scroll-margin-top:20px}
 @media(max-width:650px){.workshop-choice{gap:11px;padding:15px 13px}.workshop-choice-text strong{font-size:15px}.workshop-choice-text small{font-size:13px}.workshop-choice-arrow{font-size:20px}.workshop-choice-number{font-size:15px;padding:8px 10px}}
+
+/* v25: fifth nav choice matches options 1-4; workshop offer follows it directly */
+.section-nav{margin-bottom:0!important}
+.workshop-choice{display:flex!important;align-items:center!important;gap:12px!important;margin:12px 0 0!important;padding:13px 15px!important;background:#171d1e!important;border:1px solid #171d1e!important;border-radius:8px!important;color:#fff!important;text-transform:uppercase!important;box-shadow:0 4px 12px rgba(18,27,28,.10)!important;text-decoration:none!important;transition:background .15s,box-shadow .15s!important}
+.workshop-choice:hover,.workshop-choice:focus-visible{transform:none!important;background:#263132!important;box-shadow:0 5px 15px rgba(18,27,28,.17)!important}
+.workshop-choice .nav-number{display:flex!important;align-items:center!important;justify-content:center!important;flex:0 0 auto!important;width:28px!important;height:28px!important;border-radius:50%!important;background:#55b9b6!important;color:#081d20!important;font-size:12px!important;font-weight:700!important;padding:0!important}
+.workshop-choice>span:nth-child(2){flex:1!important;font-weight:700!important;font-size:12px!important;line-height:1.45!important;color:#fff!important}
+.workshop-choice .nav-arrow{color:#55b9b6!important;margin-left:auto!important;width:19px!important;height:19px!important;flex:0 0 auto!important}
+#workshop-prelaunch{margin-top:18px!important}
+.next-step .workshop-bridge{font-size:17px!important;line-height:1.6!important;color:#f7f7f5!important;font-weight:500!important;margin:0 0 22px!important}
+.next-step .workshop-bridge strong{color:#59c6c3!important;font-weight:700!important}
+.next-step .workshop-product-label{color:#e5c064;font-weight:600;font-size:18px;line-height:1.4;margin:14px 0 10px}
+.next-step .workshop-product-title{font-size:clamp(25px,3.3vw,35px)!important;line-height:1.22!important;font-weight:700!important;color:#fff!important;text-transform:none!important;letter-spacing:-.02em!important;margin:0 0 8px!important}
+.next-step .workshop-tagline{font-style:italic!important;color:#e8c36d!important;font-weight:500!important;font-size:16px!important;margin:0 0 22px!important}
+.next-step .workshop-outcomes{margin:23px 0!important;padding:2px 0 2px 18px!important}
+.next-step .workshop-outcome strong{display:block!important;color:#e6c36a!important;font-size:16px!important;font-weight:700!important}
+.next-step .workshop-outcome p{font-weight:600!important;color:#f5f6f5!important}
+.next-step .workshop-no-overhead{font-weight:700!important;color:#fff!important;font-size:15px!important}
+.next-step .workshop-prelaunch-disabled{display:inline-flex!important;justify-content:center!important;align-items:center!important;cursor:not-allowed!important;opacity:.6!important;filter:grayscale(.25)!important}
+.next-step .workshop-prelaunch-disabled[hidden]{display:none!important}
+.next-step .channel-cta[hidden]{display:none!important}
+@media(max-width:650px){.workshop-choice{padding:13px 12px!important}.workshop-choice>span:nth-child(2){font-size:11px!important}.next-step .workshop-product-label{font-size:16px}.next-step .workshop-bridge{font-size:16px!important}}
 </style></head><body>
 <header class="hero"><div class="container"><div class="top"><span><strong>ИНТЕРАКТИВНЫЙ ИНСТРУМЕНТ</strong> <span class="top-by">от</span> <span class="nick">@anna_malohvey</span></span></div><h1><span class="headline-main">ЧТО ПЕРЕДАТЬ ИИ,</span><span class="headline-sub">чтобы успевать больше<br/>и делать меньше</span></h1><p class="sub">За 10 минут найдите задачи,<br/>с которыми поможет ИИ,<br/>и освободите своё время<br/><strong class="hero-payoff">для общения с клиентами<br/>и роста продаж</strong></p></div></header>
 <noscript><p class="noscript-alert">В этом просмотрщике отключена работа кнопок. Откройте инструмент как веб-страницу в Safari или Chrome. Встроенный просмотр HTML-файла на iPhone может не запускать JavaScript.</p></noscript><main class="container"><section aria-labelledby="how-title" class="start-guide"><div class="guide-label">С ЧЕГО НАЧАТЬ</div><h2 id="how-title">Как пользоваться инструментом</h2><ol class="guide-steps"><li><strong>Сначала расскажите немного о себе.</strong> Укажите, чем занимаетесь, что сейчас важно, чего хотите достичь и какие любимые дела точно оставляете себе.</li><li><strong>Выберите один из четырёх разделов.</strong> Впишите свои задачи или ответьте на вопросы-подсказки обычными словами.</li><li><strong>Нажмите «Скопировать запрос».</strong> Инструмент соберёт текст с учётом ваших задач, целей и предпочтений.</li><li><strong>Вставьте запрос в любой ИИ.</strong> Он покажет всю карту возможностей, предложит приоритеты и поможет подготовить запросы для задач, которые вы выберете.</li></ol><div class="guide-outcome"><strong>Что получится в итоге?</strong><p>Вы увидите полный список способов делать меньше руками и успевать больше. Затем сами выберете, что передать ИИ первым, а он поможет с реализацией.</p></div></section>
@@ -359,21 +381,22 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
 </section>
 
 <section class="choose-panel" id="choose"><div class="guide-label">ШАГ 2 · ВЫБЕРИТЕ ЗАДАЧУ</div><h2>Что хотите разобрать?</h2><p class="choose-desc">Выберите, с какой задачей хотите разобраться в первую очередь.</p><nav aria-label="Разделы инструмента" class="section-nav"><a href="#day"><span class="nav-number">01</span><span>Куда ушло время вчера?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#regular"><span class="nav-number">02</span><span>Какие задачи повторяются постоянно?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#today"><span class="nav-number">03</span><span>Чем ИИ может помочь сегодня?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#discover"><span class="nav-number">04</span><span>Что ещё можно передать ИИ?</span><span aria-hidden="true" class="nav-arrow"></span></a></nav>
-<a href="#workshop-prelaunch" class="workshop-choice"><span class="workshop-choice-number">05</span><span class="workshop-choice-text"><strong>А если с помощью ИИ не только разгружать работу, но и начать зарабатывать на том, что уже умеете?</strong><small>Узнайте, как за 3 дня собрать предложение и проверить, готовы ли за него платить</small></span><span aria-hidden="true" class="workshop-choice-arrow">↘</span></a>
+<a href="#workshop-prelaunch" class="workshop-choice"><span class="nav-number">05</span><span>КАК ЗА 3 ДНЯ СОБРАТЬ СВОЁ ВАУ-ПРЕДЛОЖЕНИЕ И СДЕЛАТЬ ПРОДАЖИ?</span><span aria-hidden="true" class="nav-arrow"></span></a>
 <div aria-live="polite" id="nav-notice" role="status"></div></section>
 <section aria-label="Предзапись воркшопа Анны Малохвей" class="next-step" id="workshop-prelaunch">
-<div class="guide-label" style="color:#e4b95b">ВОРКШОП «ПРЕДЛОЖЕНИЕ НА МИЛЛИОН»</div>
-<h2><span style="display:block">ИИ можно передавать не только задачи.</span><span style="display:block">С его помощью можно найти, ЧТО ПРОДАВАТЬ, и собрать предложение, которое захотят купить.</span></h2>
-<p>Вы уже увидели, сколько всего ИИ может делать за вас. Но он способен помочь и с другим: найти ценность в вашем опыте, услугах или товарах, превратить её в понятное предложение и выйти с ним к покупателям.</p>
-<p>Для этого я создала воркшоп <strong>«Предложение на миллион»</strong>. За <strong>3 дня с ИИ-усилителем</strong> вы пройдёте путь от того, что уже знаете, умеете или продаёте, до первого предложения реальным покупателям.</p>
+<p class="workshop-bridge">ИИ можно передавать не только задачи. С его помощью можно найти, <strong>ЧТО ПРОДАВАТЬ</strong>, и собрать предложение, которое захотят купить.</p>
+<div class="workshop-product-label">Воркшоп «Предложение на миллион»</div>
+<h2 class="workshop-product-title">За 3 дня соберите своё ВАУ-предложение и сделайте продажи!</h2>
+<p class="workshop-tagline">«Даже если в блоге только мама и кот»</p>
 <div class="workshop-outcomes">
 <div class="workshop-outcome"><strong>1 · НАЙДЁТЕ ГЛАВНУЮ ЦЕННОСТЬ</strong><p>Выберете одну перспективную идею из своего опыта, услуг или товаров.</p></div>
 <div class="workshop-outcome"><strong>2 · СОБЕРЁТЕ ВАУ-ПРЕДЛОЖЕНИЕ</strong><p>С понятной пользой, наполнением, результатом и уникальностью.</p></div>
 <div class="workshop-outcome"><strong>3 · ПРЕДЛОЖИТЕ КУПИТЬ</strong><p>Выберете один из семи способов выйти к реальным покупателям и проверить интерес деньгами.</p></div>
 </div>
-<p>Без необходимости сначала делать большой курс или сайт, собирать тысячи подписчиков и месяцами готовиться к запуску. Внутри — пошаговые инструкции, рабочие таблицы и готовые запросы для ИИ.</p>
-<a class="channel-cta" id="workshop-prelaunch-link" href="#" rel="noopener noreferrer" target="_blank" hidden>Хочу на предзапись воркшопа<span aria-hidden="true" class="link-arrow"></span></a>
-<p class="prelaunch-note" id="workshop-prelaunch-note">Предзапись скоро откроется. Здесь появится ссылка, чтобы попасть в список ожидания.</p>
+<p class="workshop-no-overhead">Без необходимости сначала делать дорогую и сложную упаковку, собирать тысячи подписчиков и месяцами готовиться к запуску.</p>
+<a class="channel-cta" id="workshop-prelaunch-link" href="#" rel="noopener noreferrer" target="_blank" hidden>ЗАПИСАТЬСЯ В ПРЕДЗАПИСЬ<span aria-hidden="true" class="link-arrow"></span></a>
+<button class="channel-cta workshop-prelaunch-disabled" id="workshop-prelaunch-disabled" disabled aria-label="Записаться в предзапись — скоро откроется">ЗАПИСАТЬСЯ В ПРЕДЗАПИСЬ</button>
+<p class="prelaunch-note" id="workshop-prelaunch-note">Предзапись скоро откроется</p>
 <p class="next-sign">Анна Малохвей · @anna_malohvey</p>
 </section>
 <section class="panel" id="day"><div class="panel-head"><span class="num">01</span><h2>Куда ушло время вчера?</h2><p>Посмотрите на свой рабочий день. Возможно, часть дел можно было выполнить быстрее.</p></div><div class="panel-body"><label for="day-tasks">Что вы делали? Можно писать по одной задаче с новой строки</label><p class="hint">Например: подготовка таблиц, оформление презентаций, поиск информации, ответы на сообщения.</p><textarea id="day-tasks" placeholder="Вчера я...
@@ -418,6 +441,8 @@ const WORKSHOP_PRELAUNCH_URL = '';
   link.href=WORKSHOP_PRELAUNCH_URL;
   link.hidden=false;
   if(note)note.hidden=true;
+  const disabledButton=document.getElementById('workshop-prelaunch-disabled');
+  if(disabledButton)disabledButton.hidden=true;
  }
 })();
 function contextReady(){return !!field('ctx-activity') && !!(field('ctx-focus')||field('ctx-goal'));}
