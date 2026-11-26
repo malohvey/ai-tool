@@ -372,6 +372,43 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
  .next-step .workshop-product-label{font-size:clamp(27px,6.2vw,34px)!important}
  .next-step .workshop-product-title{font-size:clamp(21px,5vw,26px)!important}
 }
+
+/* v27: fifth option is a real child of the same grid, with identical sizing and numbering */
+.section-nav > a.workshop-choice{
+ box-sizing:border-box!important;
+ width:100%!important;
+ min-height:60px!important;
+ margin:0!important;
+ padding:13px 16px!important;
+ gap:12px!important;
+ border-radius:9px!important;
+ background:#171d1e!important;
+ border:1px solid #171d1e!important;
+ box-shadow:0 4px 11px rgba(25,27,26,.11)!important;
+ transform:none!important;
+}
+.section-nav > a.workshop-choice:hover,.section-nav > a.workshop-choice:focus-visible{
+ background:#263132!important;border-color:#55b9b6!important
+}
+.section-nav > a.workshop-choice > .nav-number{
+ width:36px!important;height:36px!important;min-width:36px!important;
+ flex:0 0 36px!important;border-radius:50%!important;
+ background:#56b9b7!important;color:#101b1d!important;
+ font-size:16px!important;font-weight:800!important;
+ display:flex!important;align-items:center!important;justify-content:center!important;
+}
+.section-nav > a.workshop-choice > span:nth-child(2){
+ flex:1!important;font-size:14px!important;font-weight:800!important;
+ line-height:1.4!important;color:#fff!important;
+}
+.section-nav > a.workshop-choice > .nav-arrow{
+ margin-left:auto!important;flex:0 0 auto!important;
+ width:21px!important;height:21px!important;color:#55b9b6!important;
+}
+@media(max-width:650px){
+ .section-nav > a.workshop-choice{min-height:62px!important;padding:11px!important;gap:9px!important}
+ .section-nav > a.workshop-choice > span:nth-child(2){font-size:13px!important}
+}
 </style></head><body>
 <header class="hero"><div class="container"><div class="top"><span><strong>ИНТЕРАКТИВНЫЙ ИНСТРУМЕНТ</strong> <span class="top-by">от</span> <span class="nick">@anna_malohvey</span></span></div><h1><span class="headline-main">ЧТО ПЕРЕДАТЬ ИИ,</span><span class="headline-sub">чтобы успевать больше<br/>и делать меньше</span></h1><p class="sub">За 10 минут найдите задачи,<br/>с которыми поможет ИИ,<br/>и освободите своё время<br/><strong class="hero-payoff">для общения с клиентами<br/>и роста продаж</strong></p></div></header>
 <noscript><p class="noscript-alert">В этом просмотрщике отключена работа кнопок. Откройте инструмент как веб-страницу в Safari или Chrome. Встроенный просмотр HTML-файла на iPhone может не запускать JavaScript.</p></noscript><main class="container"><section aria-labelledby="how-title" class="start-guide"><div class="guide-label">С ЧЕГО НАЧАТЬ</div><h2 id="how-title">Как пользоваться инструментом</h2><ol class="guide-steps"><li><strong>Сначала расскажите немного о себе.</strong> Укажите, чем занимаетесь, что сейчас важно, чего хотите достичь и какие любимые дела точно оставляете себе.</li><li><strong>Выберите один из четырёх разделов.</strong> Впишите свои задачи или ответьте на вопросы-подсказки обычными словами.</li><li><strong>Нажмите «Скопировать запрос».</strong> Инструмент соберёт текст с учётом ваших задач, целей и предпочтений.</li><li><strong>Вставьте запрос в любой ИИ.</strong> Он покажет всю карту возможностей, предложит приоритеты и поможет подготовить запросы для задач, которые вы выберете.</li></ol><div class="guide-outcome"><strong>Что получится в итоге?</strong><p>Вы увидите полный список способов делать меньше руками и успевать больше. Затем сами выберете, что передать ИИ первым, а он поможет с реализацией.</p></div></section>
@@ -390,8 +427,7 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
 <div class="context-actions"><div aria-live="polite" id="context-notice" role="status"></div></div>
 </section>
 
-<section class="choose-panel" id="choose"><div class="guide-label">ШАГ 2 · ВЫБЕРИТЕ ЗАДАЧУ</div><h2>Что хотите разобрать?</h2><p class="choose-desc">Выберите, с какой задачей хотите разобраться в первую очередь.</p><nav aria-label="Разделы инструмента" class="section-nav"><a href="#day"><span class="nav-number">01</span><span>Куда ушло время вчера?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#regular"><span class="nav-number">02</span><span>Какие задачи повторяются постоянно?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#today"><span class="nav-number">03</span><span>Чем ИИ может помочь сегодня?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#discover"><span class="nav-number">04</span><span>Что ещё можно передать ИИ?</span><span aria-hidden="true" class="nav-arrow"></span></a></nav>
-<a href="#workshop-prelaunch" class="workshop-choice"><span class="nav-number">05</span><span>КАК ЗА 3 ДНЯ СОБРАТЬ СВОЁ ВАУ-ПРЕДЛОЖЕНИЕ И СДЕЛАТЬ ПРОДАЖИ?</span><span aria-hidden="true" class="nav-arrow"></span></a>
+<section class="choose-panel" id="choose"><div class="guide-label">ШАГ 2 · ВЫБЕРИТЕ ЗАДАЧУ</div><h2>Что хотите разобрать?</h2><p class="choose-desc">Выберите, с какой задачей хотите разобраться в первую очередь.</p><nav aria-label="Разделы инструмента" class="section-nav"><a href="#day"><span class="nav-number">01</span><span>Куда ушло время вчера?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#regular"><span class="nav-number">02</span><span>Какие задачи повторяются постоянно?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#today"><span class="nav-number">03</span><span>Чем ИИ может помочь сегодня?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#discover"><span class="nav-number">04</span><span>Что ещё можно передать ИИ?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#workshop-prelaunch" class="workshop-choice"><span class="nav-number">05</span><span>КАК ЗА 3 ДНЯ СОБРАТЬ СВОЁ ВАУ-ПРЕДЛОЖЕНИЕ И СДЕЛАТЬ ПРОДАЖИ?</span><span aria-hidden="true" class="nav-arrow"></span></a></nav>
 <div aria-live="polite" id="nav-notice" role="status"></div></section>
 <section aria-label="Предзапись воркшопа Анны Малохвей" class="next-step" id="workshop-prelaunch">
 <p class="workshop-bridge">ИИ можно передавать не только задачи. С его помощью можно найти, <strong>ЧТО ПРОДАВАТЬ</strong>, и собрать предложение, которое захотят купить.</p>
