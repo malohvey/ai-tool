@@ -290,6 +290,30 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
   .hero{padding-bottom:305px!important}
   .hero::after{background-size:cover,auto 335px!important;background-position:center,74% bottom!important}
 }
+
+/* v22: softer typography and better readability on Mac, without changing layout */
+.hero .headline-main{font-weight:700!important;letter-spacing:-.012em!important}
+.hero .headline-sub{font-weight:650!important;letter-spacing:-.018em!important}
+.hero .sub{font-weight:600!important}
+.context-panel h2,.choose-panel h2,.start-guide h2{font-weight:700!important}
+.panel-head h2{font-weight:700!important}
+.next-step h2{font-weight:700!important;line-height:1.32!important;letter-spacing:-.012em!important}
+.next-step h2 span:last-child{font-weight:700!important}
+.next-step p{font-size:16px!important;line-height:1.7!important}
+.context-panel .description,.choose-desc,.start-guide p,.guide-steps li,.context-panel .optional{font-size:15px!important;line-height:1.7!important}
+.context-panel .field-label,.panel-body label{font-size:15px!important;font-weight:700!important}
+.context-panel .hint,.panel .hint,.context-panel .optional{font-size:14px!important;line-height:1.6!important}
+.context-panel textarea,.panel textarea{font-size:15px!important;line-height:1.55!important}
+.next-step .prelaunch-note{font-size:15px!important}
+.closing-note{margin:28px auto 12px;padding:23px 26px;max-width:760px;border-top:2px solid #55b9b6;text-align:center}
+.closing-note p{margin:0;color:#33494a;font-size:16px;line-height:1.75}
+.closing-note strong{font-weight:700;color:#1f3536}
+@media(max-width:650px){
+ .hero .headline-main{font-weight:750!important}
+ .next-step h2{font-size:clamp(23px,5.5vw,30px)!important}
+ .closing-note{padding:21px 12px}
+ .closing-note p{font-size:15px}
+}
 </style></head><body>
 <header class="hero"><div class="container"><div class="top"><span><strong>ИНТЕРАКТИВНЫЙ ИНСТРУМЕНТ</strong> <span class="top-by">от</span> <span class="nick">@anna_malohvey</span></span></div><h1><span class="headline-main">ЧТО ПЕРЕДАТЬ ИИ,</span><span class="headline-sub">чтобы успевать больше<br/>и делать меньше</span></h1><p class="sub">За 10 минут найдите задачи,<br/>с которыми поможет ИИ,<br/>и освободите своё время<br/><strong class="hero-payoff">для общения с клиентами<br/>и роста продаж</strong></p></div></header>
 <noscript><p class="noscript-alert">В этом просмотрщике отключена работа кнопок. Откройте инструмент как веб-страницу в Safari или Chrome. Встроенный просмотр HTML-файла на iPhone может не запускать JavaScript.</p></noscript><main class="container"><section aria-labelledby="how-title" class="start-guide"><div class="guide-label">С ЧЕГО НАЧАТЬ</div><h2 id="how-title">Как пользоваться инструментом</h2><ol class="guide-steps"><li><strong>Сначала расскажите немного о себе.</strong> Укажите, чем занимаетесь, что сейчас важно, чего хотите достичь и какие любимые дела точно оставляете себе.</li><li><strong>Выберите один из четырёх разделов.</strong> Впишите свои задачи или ответьте на вопросы-подсказки обычными словами.</li><li><strong>Нажмите «Скопировать запрос».</strong> Инструмент соберёт текст с учётом ваших задач, целей и предпочтений.</li><li><strong>Вставьте запрос в любой ИИ.</strong> Он покажет всю карту возможностей, предложит приоритеты и поможет подготовить запросы для задач, которые вы выберете.</li></ol><div class="guide-outcome"><strong>Что получится в итоге?</strong><p>Вы увидите полный список способов делать меньше руками и успевать больше. Затем сами выберете, что передать ИИ первым, а он поможет с реализацией.</p></div></section>
@@ -347,6 +371,7 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
 Пытался(-ась) передать кому-то..., но..."></textarea>
 <div class="actions"><button class="primary" data-copy="discover">Скопировать запрос для ИИ</button><button class="outline" data-show="discover">Посмотреть текст запроса</button><a class="ai-open" href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank">Открыть ChatGPT<span aria-hidden="true" class="link-arrow"></span></a></div><div aria-live="polite" class="notice" id="discover-notice"></div><div class="result" id="discover-result"><strong>Готовый запрос</strong><pre></pre></div></div></section>
 
+<section class="closing-note" aria-label="Напутствие"><p><strong>Не нужно передавать ИИ всё сразу.</strong> Выберите одну задачу, которую давно хочется снять с себя. Попробуйте, посмотрите на результат и настройте процесс под себя. Пусть освободившееся время останется для того, что действительно важно вам.</p></section>
 <p class="fine">Не вставляйте в запросы пароли, личные данные клиентов и другую конфиденциальную информацию. Любые важные действия с файлами, деньгами и аккаунтами проверяйте и подтверждайте сами.</p></main><footer class="footer">Интерактивный инструмент от <b>@anna_malohvey</b></footer>
 <script>
 /* После открытия предзаписи впишите здесь ссылку бота */
