@@ -325,6 +325,21 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
 .next-step .workshop-outcomes p{font-size:15px!important;line-height:1.65!important;margin:11px 0!important}
 .next-step .workshop-outcomes strong{font-weight:700!important;color:#e8c16b!important}
 @media(max-width:650px){.hero .headline-main,.hero .headline-sub{font-weight:600!important}.next-step .workshop-outcomes{padding-left:12px}}
+
+/* v24: fifth choice in navigation, leading naturally into the workshop offer */
+.workshop-choice{display:flex;align-items:center;gap:16px;margin:18px 0 0;padding:20px 24px;border-radius:9px;background:#172122;color:#fff;text-decoration:none;border:2px solid #dbb351;box-shadow:0 5px 20px rgba(15,34,32,.1);transition:transform .15s,box-shadow .15s}
+.workshop-choice:hover,.workshop-choice:focus-visible{transform:translateY(-2px);box-shadow:0 8px 23px rgba(15,34,32,.2)}
+.workshop-choice-number{flex:0 0 auto;background:#e4bb57;color:#172122;border-radius:7px;font-weight:700;font-size:18px;padding:9px 12px}
+.workshop-choice-text{display:flex;flex-direction:column;gap:7px;flex:1;min-width:0}
+.workshop-choice-text strong{font-size:17px;line-height:1.43;font-weight:650;color:#fff}
+.workshop-choice-text small{font-size:14px;line-height:1.5;color:#e1d7bc}
+.workshop-choice-arrow{font-size:27px;line-height:1;color:#e4bb57}
+.next-step .workshop-outcomes{margin:22px 0;padding:2px 0 2px 20px}
+.next-step .workshop-outcome{margin:13px 0 19px}
+.next-step .workshop-outcome strong{display:block;font-size:16px;line-height:1.45;font-weight:700!important;color:#e6c36a!important}
+.next-step .workshop-outcome p{margin:4px 0 0!important;font-size:15px!important;line-height:1.6!important;color:#f1f1ec}
+#workshop-prelaunch{scroll-margin-top:20px}
+@media(max-width:650px){.workshop-choice{gap:11px;padding:15px 13px}.workshop-choice-text strong{font-size:15px}.workshop-choice-text small{font-size:13px}.workshop-choice-arrow{font-size:20px}.workshop-choice-number{font-size:15px;padding:8px 10px}}
 </style></head><body>
 <header class="hero"><div class="container"><div class="top"><span><strong>ИНТЕРАКТИВНЫЙ ИНСТРУМЕНТ</strong> <span class="top-by">от</span> <span class="nick">@anna_malohvey</span></span></div><h1><span class="headline-main">ЧТО ПЕРЕДАТЬ ИИ,</span><span class="headline-sub">чтобы успевать больше<br/>и делать меньше</span></h1><p class="sub">За 10 минут найдите задачи,<br/>с которыми поможет ИИ,<br/>и освободите своё время<br/><strong class="hero-payoff">для общения с клиентами<br/>и роста продаж</strong></p></div></header>
 <noscript><p class="noscript-alert">В этом просмотрщике отключена работа кнопок. Откройте инструмент как веб-страницу в Safari или Chrome. Встроенный просмотр HTML-файла на iPhone может не запускать JavaScript.</p></noscript><main class="container"><section aria-labelledby="how-title" class="start-guide"><div class="guide-label">С ЧЕГО НАЧАТЬ</div><h2 id="how-title">Как пользоваться инструментом</h2><ol class="guide-steps"><li><strong>Сначала расскажите немного о себе.</strong> Укажите, чем занимаетесь, что сейчас важно, чего хотите достичь и какие любимые дела точно оставляете себе.</li><li><strong>Выберите один из четырёх разделов.</strong> Впишите свои задачи или ответьте на вопросы-подсказки обычными словами.</li><li><strong>Нажмите «Скопировать запрос».</strong> Инструмент соберёт текст с учётом ваших задач, целей и предпочтений.</li><li><strong>Вставьте запрос в любой ИИ.</strong> Он покажет всю карту возможностей, предложит приоритеты и поможет подготовить запросы для задач, которые вы выберете.</li></ol><div class="guide-outcome"><strong>Что получится в итоге?</strong><p>Вы увидите полный список способов делать меньше руками и успевать больше. Затем сами выберете, что передать ИИ первым, а он поможет с реализацией.</p></div></section>
@@ -342,22 +357,25 @@ html,body,button,input,textarea,select{font-family:Montserrat,Arial,sans-serif!i
 <p class="optional">Можно писать обычными словами. Если на какой-то вопрос пока нет ответа, поле можно оставить пустым.</p>
 <div class="context-actions"><div aria-live="polite" id="context-notice" role="status"></div></div>
 </section>
+
+<section class="choose-panel" id="choose"><div class="guide-label">ШАГ 2 · ВЫБЕРИТЕ ЗАДАЧУ</div><h2>Что хотите разобрать?</h2><p class="choose-desc">Выберите, с какой задачей хотите разобраться в первую очередь.</p><nav aria-label="Разделы инструмента" class="section-nav"><a href="#day"><span class="nav-number">01</span><span>Куда ушло время вчера?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#regular"><span class="nav-number">02</span><span>Какие задачи повторяются постоянно?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#today"><span class="nav-number">03</span><span>Чем ИИ может помочь сегодня?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#discover"><span class="nav-number">04</span><span>Что ещё можно передать ИИ?</span><span aria-hidden="true" class="nav-arrow"></span></a></nav>
+<a href="#workshop-prelaunch" class="workshop-choice"><span class="workshop-choice-number">05</span><span class="workshop-choice-text"><strong>А если с помощью ИИ не только разгружать работу, но и начать зарабатывать на том, что уже умеете?</strong><small>Узнайте, как за 3 дня собрать предложение и проверить, готовы ли за него платить</small></span><span aria-hidden="true" class="workshop-choice-arrow">↘</span></a>
+<div aria-live="polite" id="nav-notice" role="status"></div></section>
 <section aria-label="Предзапись воркшопа Анны Малохвей" class="next-step" id="workshop-prelaunch">
 <div class="guide-label" style="color:#e4b95b">ВОРКШОП «ПРЕДЛОЖЕНИЕ НА МИЛЛИОН»</div>
-<h2><span style="display:block">Вы умеете больше, чем сейчас продаёте?</span><span style="display:block">Пора превратить это в предложение, за которое готовы платить.</span></h2>
-<p>У вас уже есть знания, опыт, услуги или товары. Но что именно предложить людям, как объяснить ценность и понять, готовы ли за это платить?</p>
-<p>На воркшопе <strong>«Предложение на миллион»</strong> вы за три дня с помощью ИИ пройдёте путь от того, что у вас уже есть, до первой реальной проверки своего предложения.</p>
+<h2><span style="display:block">ИИ можно передавать не только задачи.</span><span style="display:block">С его помощью можно найти, ЧТО ПРОДАВАТЬ, и собрать предложение, которое захотят купить.</span></h2>
+<p>Вы уже увидели, сколько всего ИИ может делать за вас. Но он способен помочь и с другим: найти ценность в вашем опыте, услугах или товарах, превратить её в понятное предложение и выйти с ним к покупателям.</p>
+<p>Для этого я создала воркшоп <strong>«Предложение на миллион»</strong>. За <strong>3 дня с ИИ-усилителем</strong> вы пройдёте путь от того, что уже знаете, умеете или продаёте, до первого предложения реальным покупателям.</p>
 <div class="workshop-outcomes">
-<p><strong>01 · НАЙДЁТЕ, ЧТО ПРОДАВАТЬ.</strong> Выберете одну перспективную идею из своего опыта, услуг или товаров.</p>
-<p><strong>02 · СОБЕРЁТЕ ВАУ-ПРЕДЛОЖЕНИЕ.</strong> С понятной пользой, наполнением, ценой и условиями.</p>
-<p><strong>03 · ПРЕДЛОЖИТЕ КУПИТЬ.</strong> Выберете один из семи способов выйти к реальным покупателям и проверить интерес деньгами.</p>
+<div class="workshop-outcome"><strong>1 · НАЙДЁТЕ ГЛАВНУЮ ЦЕННОСТЬ</strong><p>Выберете одну перспективную идею из своего опыта, услуг или товаров.</p></div>
+<div class="workshop-outcome"><strong>2 · СОБЕРЁТЕ ВАУ-ПРЕДЛОЖЕНИЕ</strong><p>С понятной пользой, наполнением, результатом и уникальностью.</p></div>
+<div class="workshop-outcome"><strong>3 · ПРЕДЛОЖИТЕ КУПИТЬ</strong><p>Выберете один из семи способов выйти к реальным покупателям и проверить интерес деньгами.</p></div>
 </div>
-<p>Без необходимости сначала создавать большой курс, сайт или набирать тысячи подписчиков. С пошаговыми инструкциями, рабочими таблицами и готовыми запросами для ИИ.</p>
+<p>Без необходимости сначала делать большой курс или сайт, собирать тысячи подписчиков и месяцами готовиться к запуску. Внутри — пошаговые инструкции, рабочие таблицы и готовые запросы для ИИ.</p>
 <a class="channel-cta" id="workshop-prelaunch-link" href="#" rel="noopener noreferrer" target="_blank" hidden>Хочу на предзапись воркшопа<span aria-hidden="true" class="link-arrow"></span></a>
 <p class="prelaunch-note" id="workshop-prelaunch-note">Предзапись скоро откроется. Здесь появится ссылка, чтобы попасть в список ожидания.</p>
 <p class="next-sign">Анна Малохвей · @anna_malohvey</p>
 </section>
-<section class="choose-panel" id="choose"><div class="guide-label">ШАГ 2 · ВЫБЕРИТЕ ЗАДАЧУ</div><h2>Что хотите разобрать?</h2><p class="choose-desc">Выберите, с какой задачей хотите разобраться в первую очередь.</p><nav aria-label="Разделы инструмента" class="section-nav"><a href="#day"><span class="nav-number">01</span><span>Куда ушло время вчера?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#regular"><span class="nav-number">02</span><span>Какие задачи повторяются постоянно?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#today"><span class="nav-number">03</span><span>Чем ИИ может помочь сегодня?</span><span aria-hidden="true" class="nav-arrow"></span></a><a href="#discover"><span class="nav-number">04</span><span>Что ещё можно передать ИИ?</span><span aria-hidden="true" class="nav-arrow"></span></a></nav><div aria-live="polite" id="nav-notice" role="status"></div></section>
 <section class="panel" id="day"><div class="panel-head"><span class="num">01</span><h2>Куда ушло время вчера?</h2><p>Посмотрите на свой рабочий день. Возможно, часть дел можно было выполнить быстрее.</p></div><div class="panel-body"><label for="day-tasks">Что вы делали? Можно писать по одной задаче с новой строки</label><p class="hint">Например: подготовка таблиц, оформление презентаций, поиск информации, ответы на сообщения.</p><textarea id="day-tasks" placeholder="Вчера я...
 ...
 ..."></textarea><div class="actions"><button class="primary" data-copy="day">Скопировать запрос для ИИ</button><button class="outline" data-show="day">Посмотреть текст запроса</button><a class="ai-open" href="https://chatgpt.com/" rel="noopener noreferrer" target="_blank">Открыть ChatGPT<span aria-hidden="true" class="link-arrow"></span></a></div><div aria-live="polite" class="notice" id="day-notice"></div><div class="result" id="day-result"><strong>Готовый запрос</strong><pre></pre></div></div></section>
